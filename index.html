@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel Page!</title>
+</head>
+<body>
+    <!-- Header Principal - header -->
+    <header class="header">
+        <!-- Menu de navegación - navbar -->
+        <navbar class="navbar navbar_size">
+            <p class="navbar__titulo">Travel.co</p>
+            <!-- Menu escritorio - navbar__menu -->
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">HOME</a>
+                    </li>                    
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">BLOG</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">CONTACTS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">PAGE 1</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__link">PAGE 2</a>
+                    </li>
+                </ul>
+            </div>
+        </navbar>
+        <!-- Bienvenida - welcome -->
+        <div class="welcome welcome_size">
+            <h1 class="welcome__title">Travel</h1>
+            <p class="welcome__text welcome__text_size">Here are my favorite travel and adventure quotes, paired with images from my journeys around the world.</p>
+            <a href="" class="welcome__button welcome__button_size">read more</a>
+        </div>
+    </header>
+
+    <!-- Sección galeria - gallery -->
+    <section class="gallery">
+        <h2 class="gallery__title">Start Your journey</h2> 
+        <p class="gallery__text">The most searched countries in March</p>
+        <div class="gallery__cards">
+            <div class="card">
+                <img class="card__image" src="./assets/images/santorini.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">Santorini, Greece</p>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="card__image" src="./assets/images/vernazza.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">Vernazza, Italy</p>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="card__image" src="./assets/images/sanFrancisco.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">San Francisco</p>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="card__image" src="./assets/images/Navagio.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">Navagio, Greece</p>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="card__image" src="./assets/images/AoNang.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">Ao Nang, Thailand</p>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="card__image" src="./assets/images/phiphiIslands.jpeg" alt="santorini">
+                <div class="card__info">
+                    <i class="card__icon fas fa-map-marker-alt"></i>
+                    <p class="card__text">Phi Phi Islands, Thailand</p>
+                </div>
+            </div>     
+        </div>   
+    </section>
+
+    <!-- Sección actividades y News - activities-news -->
+    <section class="activities-news activities-news_size">
+        <div class="activities">
+            <h2 class="activities__title">Browse Tours By Activity</h2>
+            <div class="activities__container">
+                <ul class="activities__list">
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Outdoor Activities</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Cultural & Thematic Tours</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Family Friendly Tours</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Holiday & Seasonal Tours</a>
+                    </li>
+                </ul>
+                <ul class="activities__list">
+                    <li class="activities__item">
+                        <a href="" class="activities__link">City Tours</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Indulgence & Luxury Tours</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Relaxation Tours</a>
+                    </li>
+                    <li class="activities__item">
+                        <a href="" class="activities__link">Wild & Adventure Tours</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news">
+            <h2 class="news__title">Newsletter</h2>
+            <p class="news__text">Subscribe for updates & promotions</p>
+            <form class="news__form" action="">
+                <label for="email"></label>
+                <input type="text" id="email" class="news__input" placeholder="Enter a valid email address">
+                <button class="news__button">Submit</button>
+            </form>
+            <div class="news__icons">
+                <i class="news__icon fab fa-facebook"></i>
+                <i class="news__icon fab fa-twitter"></i>
+                <i class="news__icon fab fa-instagram"></i>
+                <i class="news__icon fab fa-youtube"></i>
+                <i class="news__icon fab fa-linkedin-in"></i>
+                <i class="news__icon fab fa-google-plus-g"></i>
+            </div>    
+        </div>
+    </section>
+
+    <!--Sección Descuentos - Discount -->
+    <section class="discount">
+        <div class="discount__background"></div>
+        <div class="discount__container">
+            <h2 class="discount__title">Discount 10-30% Off</h2>
+            <p class="discount__text">Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <a href="" class="discount__button">see tours</a>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros - choose -->
+    <section class="choose">
+        <h2 class="choose__title">Why Choose Us</h2>
+        <p class="choose__text">The gladdest moment in human life, me thinks, is a departure into unknown lands.</p>
+        <div class="choose__container">
+            <div class="choose__main-img"></div>
+            <div class="choose__cards-container">
+                <div class="choose__cards-img-container  image1">
+                </div>
+                <div class="choose__card">
+                    <i class="choose__card-icon fas fa-globe-americas"></i>
+                    <h3 class="choose__card-title">Passionate Travel</h3>
+                    <p class="choose__card-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia</p>
+                </div>
+                <div class="choose__card">
+                    <i class="fas fa-map-marked-alt choose__card-icon"></i>
+                    <h3 class="choose__card-title">Beautiful Places</h3>
+                    <p class="choose__card-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia</p>
+                </div>
+                <div class="choose__cards-img-container  image2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - footer -->
+    <footer class="footer">
+        <h2 class="footer__title">Travel.co</h2>
+        <div class="footer__icons">
+            <a href="" class="footer__link">
+                <i class="footer__icon fab fa-facebook"></i>    
+            </a>
+            <a href="" class="footer__link">
+                <i class="footer__icon fab fa-twitter"></i>    
+            </a>
+            <a href="" class="footer__link">
+                <i class="footer__icon fab fa-instagram"></i>    
+            </a>
+            <a href="" class="footer__link">
+                <i class="footer__icon fab fa-linkedin-in"></i>    
+            </a>
+        </div>
+        <p class="footer__text">Travel makes one modest. You see what a tiny place you occupy in the world.</p>
+    </footer>
+
+    <!-- Info - info -->
+    <div class="info">        
+        <p class="info__text">El diseño fue tomado de <a href="https://nicepage.com/" class="info__link">nicepage.com</a></p>
+        <p class="info__text">Está página fue desarrollada por <a href="" class="info__link">Miller Andrés Rocha Castaño</a> </p>
+        <div class="info__icons">
+            <a href="mailto:millerarocha@gmail.com" class="info__icon-link">
+                <i class="info__icon fas fa-envelope"></i>    
+            </a>
+            <a href="https://www.linkedin.com/in/millerarocha/" target="_blank" class="info__icon-link">
+                <i class="info__icon fab fa-linkedin-in"></i>    
+            </a>
+        </div>
+    </div>
+</body>
+</html>

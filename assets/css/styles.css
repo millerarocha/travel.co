@@ -1,0 +1,502 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+
+:root{
+    font-size: 10px;
+}
+
+/* Header */
+
+.header{
+    background-image: url("../images/fondo_header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 770px;    
+    color: #fff;
+}
+
+/* Barra de navgación - navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_size{
+    width: 60%;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0px;
+}
+
+.navbar__titulo{
+    font-size: 2.6rem;
+}
+
+.navbar__list{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.navbar__item{
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    list-style: none;
+    margin-left: 30px;   
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.navbar__link:hover{
+    color: #e8e8e8;
+}
+
+/* Bienvenida - welcome */
+
+
+.welcome_size{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px 0;
+}
+
+.welcome__title{
+    font-size: 9rem;
+    font-weight: lighter;
+}
+
+.welcome__text{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.welcome__text_size{
+    width: 40%;
+    margin: 40px 0;
+}
+
+.welcome__button{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+    background: linear-gradient(225deg,#27D4E8,#4491CC);;
+    display: inline-block;
+    border-radius: 15px;
+    transition: all 0.3s ease
+}
+
+.welcome__button_size{
+    padding: 20px 40px;
+}
+
+.welcome__button:hover{
+    color: #e8e8e8;
+}
+
+/* Galeria - Gallery */
+
+.gallery{
+    background-color: #E9F2FA; 
+    padding: 60px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.gallery__title{
+    color: #478AC9;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.gallery__text{
+    color: #4C739D;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.gallery__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+}
+
+/* Tarjeta de galeria - card */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.card__image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.card__info{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card__icon{
+    color: #c0c0c0;
+    font-size: 2.5rem;
+}
+
+.card__text{
+    font-size: 2rem;
+    font-weight: lighter;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+/* Activities - News */
+
+.activities-news{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.activities-news_size{
+    width: 60%;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 0px;
+}
+
+.activities{
+    width: 50%;
+}
+
+.activities__title{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+.activities__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities__item{
+    color: #4C739D;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.activities__item:hover{
+    color: #478AC9;
+}
+
+.activities__link{
+    text-decoration: none;
+    color: inherit;    
+}
+
+.news{
+    width: 50%;
+    padding-left: 15%;
+}
+
+.news__title{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+.news__text{
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color: #999999;
+}
+
+.news__form{
+    padding: 35px 0;
+}
+
+.news__input{
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px 10px 10px;
+}
+
+.news__button{
+    background-color: #478AC9;
+    border: none;
+    padding: 12px 30px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.news__button:hover{
+    background-color: #387CBD;
+}
+
+.news__icon{
+    color: #999999;
+    font-size: 2rem;
+    margin-right: 5%;
+}
+
+/* Discount - discount */
+
+.discount{
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.discount__background{    
+    background-image: url("../images/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    color: #fff;
+    filter:brightness(50%) contrast(70%);
+    height: 500px;
+}
+
+.discount__container{
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    top: -350px;    
+    width: 60%;    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.discount__title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+.discount__text{
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-left: 40%;
+    margin-bottom: 50px;
+}
+
+.discount__button{
+    background-color: transparent;
+    border: 2px solid;
+    padding: 12px 30px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: inherit;
+}
+
+.discount__button:hover{
+    color: #ffffffc7;
+    transition: 0.2s ease;
+}
+
+/* Sección Nosotros - choose */
+
+.choose{    
+    padding: 50px 0;
+    background-color: #E9F2FA;
+}
+
+.choose__title{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+
+.choose__text{    
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 20px 0;   
+}
+
+.choose__container{    
+    width: 60%;    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.choose__main-img{
+    background-image: url('../images/surf.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+
+.choose__cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 45%;
+}
+
+.choose__cards-img-container{
+    width: 47%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1{    
+    background-image: url('../images/runners.jpg');
+}
+
+.image2{    
+    background-image: url('../images/beach-trees.jpg');
+}
+
+.choose__card{
+    background-color: #fff;
+    width: 47%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.choose__card-icon{
+    color: #478AC9;
+    font-size: 3.5rem;
+}
+
+.choose__card-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.choose__card-text{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #292E33;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0 80px 0;
+    height: 300px;
+}
+
+.footer__title{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+.footer__text{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+
+.footer__link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__icon{
+    font-size: 2rem;
+}
+
+.footer__icon:hover{
+    color: #F2F2F2;
+    font-size: 2.1rem;
+    transition: 0.2s ease;
+}
+
+/* Info - info */
+
+.info{
+    background-color: #333333;  
+    color: #ffffff; 
+    padding: 20px 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__text{
+    font-size: 1.5rem;
+}
+
+.info__link{
+    color: #387CBD;
+    text-decoration: none;
+}
+
+.info__icon-link{
+    font-size: 1.5rem;
+    color: inherit;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
