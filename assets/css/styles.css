@@ -66,8 +66,17 @@
     color: #e8e8e8;
 }
 
-/* Bienvenida - welcome */
+.navbar__menu-toggle{
+    display: none;
+}
 
+.navbar__menu-checkbox{
+    display: none;
+}
+
+
+
+/* Bienvenida - welcome */
 
 .welcome_size{
     width: 60%;
@@ -132,7 +141,7 @@
     font-size: 1.8rem;
     font-weight: lighter;
     font-style: italic;
-    margin-bottom: 60px;
+    margin-bottom: 60px;    
 }
 
 .gallery__cards{
@@ -243,6 +252,7 @@
 
 .news__form{
     padding: 35px 0;
+    display: flex;
 }
 
 .news__input{
@@ -265,6 +275,10 @@
 
 .news__button:hover{
     background-color: #387CBD;
+}
+
+.news__icons{
+    display: flex;
 }
 
 .news__icon{
@@ -499,4 +513,228 @@
     text-decoration: none;
 }
 
+@media all and (max-width: 1200px) {
 
+    .navbar_size{
+        width: 90%;
+    }
+
+    .welcome_size{
+        width: 90%;
+    }
+
+    .gallery__cards{
+        width: 90%;
+    }
+
+    .card__text{
+        font-size: 1.7rem;
+    }
+
+    .activities-news_size{
+        width: 90%;   
+    }
+
+    .discount__container{
+        width: 90%;
+    }
+
+    .choose__container{
+        width: 90%;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .info__text{
+        margin: 3px 0;
+    }
+
+    .info__link{
+        margin: 5px 0;
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+    .welcome__text_size{
+        width: 80%;
+    }
+
+    .news{
+        width: 50%;
+        padding-left: 5%;
+    }
+
+    .news__input{
+        width: 58%;
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+
+    .navbar__menu-toggle{
+        display: block;
+        width: 25px;
+    }
+
+    .navbar__menu-lines{
+        width: 100%;        
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: #FFF;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    input[type="checkbox"]:checked + label div{
+        transform: rotate(45deg) translate(-5px, -2px);
+    }
+
+    input[type="checkbox"]:checked + label div:nth-last-child(3){
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked + label div:nth-last-child(2){
+        transform: rotate(-45deg) translate(-5px, -1px);
+    }
+
+    .mobile-navbar{
+        display: block;
+        background-color: #387CBD;
+        position: fixed;
+        left: -100%;
+        margin-top: 5px; 
+        width: 100vw;  
+        transition: transform 0.5s ease-in-out;      
+    }
+
+    input[type="checkbox"]:checked + label ~ .mobile-navbar{
+        display: block;
+        transform: translate(100%, 0);
+    }
+
+    .mobile-navbar__option{
+        padding: 16px;
+        list-style: none;
+    }
+
+    .mobile-navbar__link{
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .discount__text{
+        padding-left: 20%;
+    }
+
+    .choose__container{
+        flex-direction: column;
+    }
+
+    .choose__main-img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .choose__cards-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .choose__cards-img-container{
+        width: 48%;
+        margin: 10px 0;
+    }
+
+    .choose__card{
+        width: 48%;
+        margin: 10px 0;
+    }
+
+    .footer__icons{
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .card__image{
+        height: 200px;
+    }
+
+    .activities-news{
+        flex-direction: column;
+    }
+
+    .activities-news_size{
+        width: 90%;
+    }
+
+    .activities{
+        width: 100%;
+    }
+
+    .news{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .footer__text{
+        width: 90%;
+    }
+
+    .info__text{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .card{
+        width: 100%;    
+    }  
+    
+    .card__image{
+        height: 380px;
+    }
+
+    .activities__container{
+        flex-direction: co;
+    }
+
+    .news__form{
+        flex-direction: column;
+    }
+
+    .news__input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news__button{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .discount__container{
+        top: -450px;
+    }
+
+    .choose__cards-img-container{
+        width: 100%;
+        height: 300px;
+    }
+
+    .choose__card{
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer__icons{
+        width: 50%;
+    }
+
+}
