@@ -606,7 +606,7 @@
         display: block;
         background-color: #387CBD;
         position: fixed;
-        left: -100%;
+        left: -120%;
         margin-top: 5px; 
         width: 100vw;  
         transition: transform 0.5s ease-in-out;      
